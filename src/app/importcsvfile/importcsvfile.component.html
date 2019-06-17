@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- <img class="rabo_logo" src="/assets/Rabobank_logo.png"> -->
+    <div class="jumbotron">
+        <h1 class="display-4">RaboBank</h1>
+      <label class="selectcsv">Select CSV File </label>
+      <input type="file" #fileImportInput name="File Upload" class="uploadfile" id="txtFileUpload" (change)="fileChangeListener($event)"
+        accept=".csv" />
+      <button class="btn btn-light" (click)="resetFile()">Reset to select another file</button>
+    </div>
+  </div>
+  <div class="row">
+    <table class="table table-striped">
+      <tr>
+        <th *ngFor="let headerRow of csvRecords[0]; let i = index">
+          <button class="btn btn-light headerbutton" (click)="sortTable(i)">{{headerRow}}</button> 
+        </th>
+      </tr>
+      <tr *ngFor="let row of csvRecords| slice:1">
+        <td *ngFor="let cell of row">{{cell}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

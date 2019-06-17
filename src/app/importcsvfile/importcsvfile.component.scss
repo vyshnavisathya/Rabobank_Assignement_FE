@@ -1,0 +1,56 @@
+.container-fluid{
+    margin: 15px 15px 15px 15px !important;
+}
+.uploadPage{
+    background: #eee;
+    width: 100%
+}
+.UploadFile{
+    margin-top: 50px;
+    /* margin-left: 39%; */
+    background: #eee;
+    width: 100%;
+    text-align: center;
+}
+.rabo_logo{
+    max-height: 100px;
+}
+.raboHeader{
+    background: #eee;
+}
+.headerbutton{
+    background-color: #dddddd !important;
+}
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;    
+    max-height: 600px;
+    overflow: auto;
+  }
+.tbody{    
+    overflow: auto;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+.jumbotron{
+    width : 100%;
+    align-content: center;
+    background-color: #009;;
+}
+.display-4{
+    background-color: #009;;
+    font-weight: 600;
+    padding-left: 40%;
+    color : #fd6400;
+}
+.selectcsv{
+    color: white;
+}
+.uploadfile{
+    color: white
+}
